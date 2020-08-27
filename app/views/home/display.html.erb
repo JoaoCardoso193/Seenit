@@ -6,7 +6,7 @@
   </div>
   <%= button_to("Logout", '/logout',  {method: :post, class: 'w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white'})%>
   <%= link_to(conversations_path, class: "w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white") do %>
-      <i class="fa fa-envelope"></i><span class="w3-badge w3-right w3-small w3-green"><%= User.find(session[:user_id]).unread_messages%></span>
+      <i class="fa fa-envelope"></i>
   <%end%>
   <%= link_to('/analytics', class: "w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white") do %>
     <i class="fa fa-line-chart"></i>
